@@ -1,0 +1,1461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Pristine Garage Co — Professional garage cleanouts, junk hauling, and garage restoration in the Twin Cities, Minnesota. Deep cleanouts starting at $650.">
+<meta name="keywords" content="garage cleanout Twin Cities, garage cleaning Minnesota, garage junk removal Minneapolis, garage hauling services, packed garage cleanup">
+<title>Pristine Garage Co | Professional Garage Cleanouts & Hauling — Twin Cities, MN</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0B1B2B;
+    --navy-mid: #132336;
+    --navy-light: #1E3A56;
+    --orange: #F05A1A;
+    --orange-light: #FF7A40;
+    --orange-glow: rgba(240,90,26,0.12);
+    --white: #FFFFFF;
+    --off-white: #F8F6F2;
+    --gray-100: #F0EDE8;
+    --gray-200: #D8D4CC;
+    --gray-400: #9B9690;
+    --gray-600: #5C5850;
+    --text-dark: #0B1B2B;
+    --text-body: #2D3748;
+    --text-muted: #6B7280;
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 22px;
+    --radius-xl: 32px;
+    --shadow-sm: 0 2px 8px rgba(11,27,43,0.08);
+    --shadow-md: 0 6px 24px rgba(11,27,43,0.12);
+    --shadow-lg: 0 16px 48px rgba(11,27,43,0.16);
+    --transition: all 0.28s cubic-bezier(0.25,0.46,0.45,0.94);
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', sans-serif; color: var(--text-body); background: var(--white); overflow-x: hidden; }
+  h1, h2, h3, h4, h5 { font-family: 'Syne', sans-serif; color: var(--text-dark); line-height: 1.15; }
+  p { line-height: 1.7; }
+  a { text-decoration: none; color: inherit; }
+  img { max-width: 100%; display: block; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+  .btn-primary {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--orange); color: var(--white);
+    padding: 15px 30px; border-radius: 50px; font-family: 'Syne', sans-serif;
+    font-weight: 700; font-size: 15px; letter-spacing: 0.3px;
+    border: none; cursor: pointer; transition: var(--transition);
+    white-space: nowrap;
+  }
+  .btn-primary:hover { background: var(--orange-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(240,90,26,0.35); }
+  .btn-outline {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: transparent; color: var(--white);
+    padding: 14px 28px; border-radius: 50px; font-family: 'Syne', sans-serif;
+    font-weight: 600; font-size: 15px;
+    border: 2px solid rgba(255,255,255,0.4); cursor: pointer; transition: var(--transition);
+    white-space: nowrap;
+  }
+  .btn-outline:hover { background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.7); transform: translateY(-2px); }
+  .btn-dark {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--navy); color: var(--white);
+    padding: 15px 30px; border-radius: 50px; font-family: 'Syne', sans-serif;
+    font-weight: 700; font-size: 15px;
+    border: none; cursor: pointer; transition: var(--transition);
+    white-space: nowrap;
+  }
+  .btn-dark:hover { background: var(--navy-light); transform: translateY(-2px); box-shadow: var(--shadow-md); }
+  .section-label {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: 'Syne', sans-serif; font-weight: 600; font-size: 12px;
+    letter-spacing: 2px; text-transform: uppercase; color: var(--orange);
+    margin-bottom: 16px;
+  }
+  .section-label::before { content: ''; display: block; width: 24px; height: 2px; background: var(--orange); border-radius: 2px; }
+  .section-title { font-size: clamp(32px, 4vw, 52px); font-weight: 800; line-height: 1.1; margin-bottom: 20px; }
+  .section-subtitle { font-size: 18px; color: var(--text-muted); max-width: 580px; line-height: 1.7; margin-bottom: 48px; }
+
+  /* ─── NAV ─── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    padding: 18px 0; transition: var(--transition);
+    background: transparent;
+  }
+  nav.scrolled {
+    background: rgba(11,27,43,0.97); backdrop-filter: blur(16px);
+    padding: 12px 0; box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+  }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+  .logo { display: flex; align-items: center; gap: 12px; }
+  .logo-icon {
+    width: 44px; height: 44px; background: var(--orange); border-radius: 10px;
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  .logo-icon svg { width: 24px; height: 24px; fill: white; }
+  .logo-text { line-height: 1.1; }
+  .logo-text .name { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 18px; color: var(--white); letter-spacing: -0.3px; }
+  .logo-text .tagline { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.55); font-weight: 500; }
+  .nav-links { display: flex; align-items: center; gap: 8px; }
+  .nav-links a {
+    font-family: 'Syne', sans-serif; font-weight: 600; font-size: 14px;
+    color: rgba(255,255,255,0.8); padding: 8px 14px; border-radius: 8px; transition: var(--transition);
+  }
+  .nav-links a:hover { color: var(--white); background: rgba(255,255,255,0.08); }
+  .nav-cta { display: flex; align-items: center; gap: 12px; }
+  .nav-phone { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 15px; color: var(--white); display: flex; align-items: center; gap: 6px; }
+  .nav-phone svg { width: 16px; height: 16px; fill: var(--orange); }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; }
+  .hamburger span { display: block; width: 24px; height: 2px; background: white; border-radius: 2px; transition: var(--transition); }
+
+  /* ─── HERO ─── */
+  #home {
+    min-height: 100vh; background: var(--navy);
+    position: relative; overflow: hidden;
+    display: flex; align-items: center; padding: 120px 0 80px;
+  }
+  .hero-bg {
+    position: absolute; inset: 0; z-index: 0;
+    background:
+      radial-gradient(ellipse 60% 70% at 70% 50%, rgba(240,90,26,0.08) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 50% at 10% 80%, rgba(30,58,86,0.6) 0%, transparent 60%);
+  }
+  .hero-grid {
+    position: absolute; inset: 0; z-index: 0; opacity: 0.04;
+    background-image: linear-gradient(rgba(255,255,255,0.8) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.8) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+  .hero-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; position: relative; z-index: 1; width: 100%; }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(240,90,26,0.15); border: 1px solid rgba(240,90,26,0.3);
+    color: var(--orange-light); font-family: 'Syne', sans-serif; font-weight: 600;
+    font-size: 13px; letter-spacing: 0.5px; padding: 8px 16px; border-radius: 50px;
+    margin-bottom: 24px;
+  }
+  .hero-badge span { width: 7px; height: 7px; background: var(--orange); border-radius: 50%; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(1.3)} }
+  .hero-title { font-size: clamp(38px, 5vw, 68px); font-weight: 800; color: var(--white); line-height: 1.05; margin-bottom: 24px; }
+  .hero-title .accent { color: var(--orange); }
+  .hero-subtitle { font-size: 18px; color: rgba(255,255,255,0.7); line-height: 1.7; margin-bottom: 40px; max-width: 500px; }
+  .hero-ctas { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 48px; }
+  .hero-stats { display: flex; gap: 32px; flex-wrap: wrap; }
+  .hero-stat { text-align: left; }
+  .hero-stat .num { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 32px; color: var(--white); }
+  .hero-stat .num span { color: var(--orange); }
+  .hero-stat .lab { font-size: 13px; color: rgba(255,255,255,0.55); font-weight: 500; margin-top: 2px; }
+  .hero-visual { position: relative; }
+  .hero-card-main {
+    background: var(--navy-mid); border: 1px solid rgba(255,255,255,0.08);
+    border-radius: var(--radius-lg); overflow: hidden;
+    box-shadow: 0 24px 64px rgba(0,0,0,0.4);
+    animation: float 6s ease-in-out infinite;
+  }
+  @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+  .hero-card-header {
+    background: linear-gradient(135deg, var(--orange) 0%, #C8440E 100%);
+    padding: 28px; display: flex; align-items: center; gap: 16px;
+  }
+  .hero-card-icon { width: 56px; height: 56px; background: rgba(255,255,255,0.2); border-radius: 14px; display: flex; align-items: center; justify-content: center; }
+  .hero-card-icon svg { width: 30px; height: 30px; fill: white; }
+  .hero-card-info .title { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 20px; color: white; }
+  .hero-card-info .sub { font-size: 14px; color: rgba(255,255,255,0.8); margin-top: 2px; }
+  .hero-card-body { padding: 28px; }
+  .transform-row { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+  .transform-box { flex: 1; border-radius: 10px; overflow: hidden; height: 100px; background: var(--navy-light); display: flex; align-items: center; justify-content: center; }
+  .transform-box.before { background: linear-gradient(135deg, #3D2B1F, #5C3D2A); }
+  .transform-box.after { background: linear-gradient(135deg, #1A3A2A, #0F2D1E); }
+  .transform-label { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: rgba(255,255,255,0.6); text-align: center; }
+  .transform-label .emoji { font-size: 28px; display: block; margin-bottom: 4px; }
+  .transform-arrow { font-size: 20px; color: var(--orange); font-weight: 700; }
+  .hero-card-footer { border-top: 1px solid rgba(255,255,255,0.07); padding: 16px 28px; display: flex; align-items: center; justify-content: space-between; }
+  .rating { display: flex; align-items: center; gap: 6px; }
+  .stars { color: #FCD34D; font-size: 14px; letter-spacing: 1px; }
+  .rating-text { font-size: 13px; color: rgba(255,255,255,0.6); }
+  .badge-pill { background: rgba(240,90,26,0.2); color: var(--orange-light); border: 1px solid rgba(240,90,26,0.3); font-family: 'Syne', sans-serif; font-weight: 700; font-size: 12px; padding: 6px 12px; border-radius: 50px; }
+  .hero-floating-badge {
+    position: absolute; top: -16px; right: -16px;
+    background: #10B981; color: white; font-family: 'Syne', sans-serif; font-weight: 700; font-size: 12px;
+    padding: 10px 16px; border-radius: 50px; box-shadow: 0 4px 16px rgba(16,185,129,0.4);
+    white-space: nowrap; animation: float 4s ease-in-out infinite 2s;
+  }
+
+  /* ─── TRUST BAR ─── */
+  .trust-bar { background: var(--orange); padding: 16px 0; }
+  .trust-items { display: flex; align-items: center; justify-content: center; gap: 32px; flex-wrap: wrap; }
+  .trust-item { display: flex; align-items: center; gap: 8px; font-family: 'Syne', sans-serif; font-weight: 600; font-size: 13px; color: white; letter-spacing: 0.3px; }
+  .trust-item svg { width: 18px; height: 18px; fill: rgba(255,255,255,0.8); flex-shrink: 0; }
+  .trust-divider { width: 1px; height: 20px; background: rgba(255,255,255,0.3); }
+
+  /* ─── SERVICES ─── */
+  #services { padding: 100px 0; background: var(--off-white); }
+  .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+  .service-card {
+    background: var(--white); border-radius: var(--radius-lg); padding: 36px 28px;
+    border: 1px solid rgba(0,0,0,0.06); transition: var(--transition); position: relative; overflow: hidden;
+  }
+  .service-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+    background: var(--orange); transform: scaleX(0); transition: var(--transition); transform-origin: left;
+  }
+  .service-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-color: transparent; }
+  .service-card:hover::before { transform: scaleX(1); }
+  .service-icon {
+    width: 56px; height: 56px; background: var(--orange-glow); border-radius: 14px;
+    display: flex; align-items: center; justify-content: center; margin-bottom: 20px;
+  }
+  .service-icon svg { width: 28px; height: 28px; fill: var(--orange); }
+  .service-card h3 { font-family: 'Syne', sans-serif; font-size: 20px; font-weight: 700; margin-bottom: 10px; color: var(--navy); }
+  .service-card p { font-size: 15px; color: var(--text-muted); line-height: 1.65; }
+
+  /* ─── PRICING ─── */ */
+  #pricing { padding: 100px 0; background: var(--white); }
+  .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px; margin-top: 56px; }
+  .price-card {
+    border-radius: var(--radius-lg); padding: 40px 32px;
+    border: 1.5px solid var(--gray-200); transition: var(--transition); position: relative;
+  }
+  .price-card.featured {
+    background: var(--navy); border-color: var(--navy);
+    box-shadow: 0 20px 60px rgba(11,27,43,0.25);
+  }
+  .price-card:not(.featured):hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+  .price-badge {
+    position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
+    background: var(--orange); color: white; font-family: 'Syne', sans-serif; font-weight: 700; font-size: 12px;
+    padding: 6px 16px; border-radius: 50px; white-space: nowrap;
+  }
+  .price-tier { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 12px; }
+  .price-card.featured .price-tier { color: rgba(255,255,255,0.55); }
+  .price-amount { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 52px; line-height: 1; color: var(--navy); margin-bottom: 4px; }
+  .price-amount span { font-size: 22px; font-weight: 600; }
+  .price-card.featured .price-amount { color: var(--white); }
+  .price-note { font-size: 14px; color: var(--text-muted); margin-bottom: 28px; }
+  .price-card.featured .price-note { color: rgba(255,255,255,0.55); }
+  .price-features { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 32px; }
+  .price-features li { display: flex; align-items: flex-start; gap: 10px; font-size: 15px; color: var(--text-body); }
+  .price-card.featured .price-features li { color: rgba(255,255,255,0.85); }
+  .price-features li::before { content: '✓'; color: var(--orange); font-weight: 700; font-size: 16px; flex-shrink: 0; margin-top: 1px; }
+  .price-card.featured .price-features li::before { color: #6EE7B7; }
+  .price-disclaimer { font-size: 13px; color: var(--text-muted); margin-top: 40px; text-align: center; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.65; }
+  .price-card.featured .btn-primary { width: 100%; justify-content: center; }
+  .price-card:not(.featured) .btn-dark { width: 100%; justify-content: center; }
+
+  /* ─── REVIEWS ─── */
+  #reviews { padding: 100px 0; background: var(--off-white); }
+  .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 56px; }
+  .review-card {
+    background: var(--white); border-radius: var(--radius-lg); padding: 32px 28px;
+    border: 1px solid rgba(0,0,0,0.06); transition: var(--transition);
+  }
+  .review-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+  .review-stars { color: #FCD34D; font-size: 18px; letter-spacing: 2px; margin-bottom: 16px; }
+  .review-text { font-size: 15px; color: var(--text-body); line-height: 1.7; margin-bottom: 20px; font-style: italic; }
+  .review-author { display: flex; align-items: center; gap: 12px; }
+  .review-avatar {
+    width: 44px; height: 44px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Syne', sans-serif; font-weight: 700; font-size: 16px; color: white; flex-shrink: 0;
+  }
+  .review-name { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 15px; color: var(--navy); }
+  .review-location { font-size: 13px; color: var(--text-muted); }
+  .review-verified { font-size: 12px; color: #10B981; font-weight: 600; display: flex; align-items: center; gap: 4px; margin-top: 4px; }
+
+  /* ─── BOOKING FORM ─── */
+  #book { padding: 100px 0; background: var(--navy); }
+  #book .section-title { color: white; }
+  #book .section-subtitle { color: rgba(255,255,255,0.6); }
+  .booking-wrapper { display: grid; grid-template-columns: 1fr 2fr; gap: 56px; align-items: start; margin-top: 60px; }
+  .booking-sidebar { position: sticky; top: 100px; }
+  .booking-info-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.09); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 24px; }
+  .booking-info-card h3 { font-family: 'Syne', sans-serif; font-size: 20px; font-weight: 700; color: white; margin-bottom: 16px; }
+  .booking-info-list { display: flex; flex-direction: column; gap: 12px; }
+  .booking-info-item { display: flex; align-items: flex-start; gap: 12px; font-size: 14px; color: rgba(255,255,255,0.7); }
+  .booking-info-item svg { width: 18px; height: 18px; fill: var(--orange); flex-shrink: 0; margin-top: 2px; }
+  .booking-contact { background: var(--orange); border-radius: var(--radius-lg); padding: 28px; }
+  .booking-contact h4 { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 16px; color: white; margin-bottom: 16px; }
+  .contact-link { display: flex; align-items: center; gap: 10px; color: white; font-weight: 600; font-size: 15px; margin-bottom: 10px; }
+  .contact-link svg { width: 18px; height: 18px; fill: rgba(255,255,255,0.8); flex-shrink: 0; }
+
+  /* Form Styles */
+  .booking-form-container { background: white; border-radius: var(--radius-xl); padding: 48px; box-shadow: 0 24px 72px rgba(0,0,0,0.3); }
+  .form-progress { display: flex; align-items: center; gap: 0; margin-bottom: 40px; }
+  .progress-step {
+    display: flex; flex-direction: column; align-items: center; gap: 8px; flex: 1; position: relative; cursor: pointer;
+  }
+  .progress-step:not(:last-child)::after {
+    content: ''; position: absolute; top: 18px; left: 50%; right: -50%;
+    height: 2px; background: var(--gray-200); z-index: 0;
+  }
+  .progress-step.active:not(:last-child)::after, .progress-step.done:not(:last-child)::after { background: var(--orange); }
+  .step-num {
+    width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    font-family: 'Syne', sans-serif; font-weight: 700; font-size: 14px;
+    background: var(--gray-100); color: var(--text-muted); position: relative; z-index: 1;
+    transition: var(--transition); border: 2px solid var(--gray-200);
+  }
+  .progress-step.active .step-num { background: var(--orange); color: white; border-color: var(--orange); }
+  .progress-step.done .step-num { background: #10B981; color: white; border-color: #10B981; }
+  .step-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); text-align: center; }
+  .progress-step.active .step-label { color: var(--orange); }
+  .progress-step.done .step-label { color: #10B981; }
+
+  .form-step { display: none; animation: fadeIn 0.35s ease; }
+  .form-step.active { display: block; }
+  @keyframes fadeIn { from{opacity:0;transform:translateY(12px)} to{opacity:1;transform:translateY(0)} }
+  .form-step-title { font-family: 'Syne', sans-serif; font-size: 24px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+  .form-step-sub { font-size: 15px; color: var(--text-muted); margin-bottom: 28px; }
+  .form-grid { display: grid; gap: 20px; }
+  .form-grid-2 { grid-template-columns: 1fr 1fr; }
+  .form-group { display: flex; flex-direction: column; gap: 6px; }
+  .form-group.full { grid-column: 1 / -1; }
+  .form-label { font-family: 'Syne', sans-serif; font-weight: 600; font-size: 13px; color: var(--navy); letter-spacing: 0.3px; }
+  .form-label .req { color: var(--orange); margin-left: 3px; }
+  .form-input, .form-select, .form-textarea {
+    width: 100%; padding: 14px 16px; border: 1.5px solid var(--gray-200);
+    border-radius: var(--radius-md); font-family: 'DM Sans', sans-serif; font-size: 15px;
+    color: var(--text-body); background: var(--white); transition: var(--transition); outline: none;
+    appearance: none;
+  }
+  .form-input:focus, .form-select:focus, .form-textarea:focus {
+    border-color: var(--orange); box-shadow: 0 0 0 4px rgba(240,90,26,0.1);
+  }
+  .form-textarea { min-height: 100px; resize: vertical; }
+  .form-select-wrap { position: relative; }
+  .form-select-wrap::after {
+    content: ''; position: absolute; right: 16px; top: 50%; transform: translateY(-50%);
+    width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent;
+    border-top: 5px solid var(--text-muted); pointer-events: none;
+  }
+  .checkbox-group { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; }
+  .checkbox-item { position: relative; }
+  .checkbox-item input[type="checkbox"] { position: absolute; opacity: 0; width: 0; height: 0; }
+  .checkbox-label {
+    display: flex; align-items: center; gap: 8px; padding: 12px 14px;
+    border: 1.5px solid var(--gray-200); border-radius: var(--radius-md);
+    font-size: 14px; color: var(--text-body); cursor: pointer; transition: var(--transition);
+    user-select: none;
+  }
+  .checkbox-label::before {
+    content: ''; width: 18px; height: 18px; border: 2px solid var(--gray-200);
+    border-radius: 5px; flex-shrink: 0; transition: var(--transition);
+    background: white; display: flex; align-items: center; justify-content: center;
+  }
+  .checkbox-item input:checked + .checkbox-label { border-color: var(--orange); background: var(--orange-glow); color: var(--navy); font-weight: 500; }
+  .checkbox-item input:checked + .checkbox-label::before { background: var(--orange); border-color: var(--orange); background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4l2.5 2.5L9 1' stroke='white' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: center; background-size: 12px; }
+  .radio-group { display: flex; flex-direction: column; gap: 10px; }
+  .radio-item { position: relative; }
+  .radio-item input[type="radio"] { position: absolute; opacity: 0; width: 0; height: 0; }
+  .radio-label {
+    display: flex; align-items: center; gap: 10px; padding: 14px 16px;
+    border: 1.5px solid var(--gray-200); border-radius: var(--radius-md);
+    font-size: 15px; cursor: pointer; transition: var(--transition);
+  }
+  .radio-label::before {
+    content: ''; width: 18px; height: 18px; border: 2px solid var(--gray-200);
+    border-radius: 50%; flex-shrink: 0; transition: var(--transition); background: white;
+  }
+  .radio-item input:checked + .radio-label { border-color: var(--orange); background: var(--orange-glow); color: var(--navy); font-weight: 500; }
+  .radio-item input:checked + .radio-label::before { border-color: var(--orange); border-width: 5px; }
+  .file-upload-zone {
+    border: 2px dashed var(--gray-200); border-radius: var(--radius-md);
+    padding: 32px; text-align: center; cursor: pointer; transition: var(--transition);
+    background: var(--off-white);
+  }
+  .file-upload-zone:hover { border-color: var(--orange); background: var(--orange-glow); }
+  .file-upload-zone svg { width: 36px; height: 36px; fill: var(--text-muted); margin: 0 auto 12px; }
+  .file-upload-zone p { font-size: 15px; color: var(--text-muted); margin-bottom: 4px; }
+  .file-upload-zone span { font-size: 13px; color: var(--text-muted); }
+  #fileInput { display: none; }
+  #fileList { margin-top: 12px; display: flex; flex-direction: column; gap: 6px; }
+  .file-item { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text-body); background: var(--off-white); padding: 8px 12px; border-radius: 8px; }
+  .file-item svg { width: 16px; height: 16px; fill: var(--orange); flex-shrink: 0; }
+  .form-nav { display: flex; align-items: center; justify-content: space-between; margin-top: 32px; gap: 12px; }
+  .btn-step-back { background: none; border: 1.5px solid var(--gray-200); color: var(--text-muted); padding: 14px 24px; border-radius: 50px; font-family: 'Syne', sans-serif; font-weight: 600; font-size: 14px; cursor: pointer; transition: var(--transition); }
+  .btn-step-back:hover { border-color: var(--navy); color: var(--navy); }
+  .btn-step-next { background: var(--navy); color: white; padding: 14px 28px; border-radius: 50px; font-family: 'Syne', sans-serif; font-weight: 700; font-size: 15px; border: none; cursor: pointer; transition: var(--transition); display: flex; align-items: center; gap: 8px; }
+  .btn-step-next:hover { background: var(--navy-light); transform: translateY(-2px); }
+  .btn-submit { background: var(--orange); color: white; padding: 16px 36px; border-radius: 50px; font-family: 'Syne', sans-serif; font-weight: 700; font-size: 16px; border: none; cursor: pointer; transition: var(--transition); display: flex; align-items: center; gap: 10px; }
+  .btn-submit:hover { background: var(--orange-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(240,90,26,0.4); }
+  .btn-submit:disabled { opacity: 0.7; cursor: not-allowed; transform: none; }
+  .success-state { display: none; text-align: center; padding: 48px 24px; }
+  .success-state.show { display: block; }
+  .success-icon { width: 80px; height: 80px; background: #D1FAE5; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; }
+  .success-icon svg { width: 40px; height: 40px; fill: #10B981; }
+  .success-state h3 { font-family: 'Syne', sans-serif; font-size: 28px; font-weight: 800; color: var(--navy); margin-bottom: 12px; }
+  .success-state p { font-size: 16px; color: var(--text-muted); max-width: 400px; margin: 0 auto; line-height: 1.65; }
+
+  /* ─── FAQ ─── */
+  #faq { padding: 100px 0; background: var(--white); }
+  .faq-list { max-width: 760px; margin: 56px auto 0; display: flex; flex-direction: column; gap: 16px; }
+  .faq-item { border: 1.5px solid var(--gray-200); border-radius: var(--radius-md); overflow: hidden; transition: var(--transition); }
+  .faq-item.open { border-color: var(--orange); box-shadow: 0 4px 16px var(--orange-glow); }
+  .faq-question {
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    padding: 22px 24px; cursor: pointer; user-select: none;
+  }
+  .faq-question h4 { font-family: 'Syne', sans-serif; font-size: 17px; font-weight: 700; color: var(--navy); }
+  .faq-toggle { width: 28px; height: 28px; background: var(--gray-100); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: var(--transition); }
+  .faq-item.open .faq-toggle { background: var(--orange); transform: rotate(45deg); }
+  .faq-toggle svg { width: 14px; height: 14px; fill: var(--text-muted); }
+  .faq-item.open .faq-toggle svg { fill: white; }
+  .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.3s ease; }
+  .faq-item.open .faq-answer { max-height: 300px; }
+  .faq-answer-inner { padding: 0 24px 24px; font-size: 15px; color: var(--text-muted); line-height: 1.7; }
+
+  /* ─── SERVICE AREA ─── */
+  #service-area { padding: 80px 0; background: var(--off-white); }
+  .area-grid { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 40px; }
+  .area-pill {
+    padding: 10px 20px; background: var(--white); border: 1.5px solid var(--gray-200);
+    border-radius: 50px; font-family: 'Syne', sans-serif; font-weight: 600; font-size: 14px;
+    color: var(--navy); transition: var(--transition);
+  }
+  .area-pill:hover { border-color: var(--orange); color: var(--orange); background: var(--orange-glow); }
+
+  /* ─── CTA SECTION ─── */
+  #cta { padding: 100px 0; background: linear-gradient(135deg, var(--orange) 0%, #C8440E 100%); }
+  .cta-inner { text-align: center; }
+  .cta-inner h2 { font-size: clamp(32px, 4vw, 56px); font-weight: 800; color: white; margin-bottom: 20px; }
+  .cta-inner p { font-size: 19px; color: rgba(255,255,255,0.85); max-width: 560px; margin: 0 auto 40px; line-height: 1.65; }
+  .cta-buttons { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
+  .btn-white { background: white; color: var(--orange); padding: 16px 36px; border-radius: 50px; font-family: 'Syne', sans-serif; font-weight: 800; font-size: 16px; border: none; cursor: pointer; transition: var(--transition); display: inline-flex; align-items: center; gap: 8px; }
+  .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+  .btn-white-outline { background: transparent; color: white; padding: 15px 32px; border-radius: 50px; font-family: 'Syne', sans-serif; font-weight: 700; font-size: 16px; border: 2px solid rgba(255,255,255,0.5); cursor: pointer; transition: var(--transition); display: inline-flex; align-items: center; gap: 8px; }
+  .btn-white-outline:hover { background: rgba(255,255,255,0.12); border-color: white; transform: translateY(-2px); }
+
+  /* ─── FOOTER ─── */
+  footer { background: var(--navy); padding: 72px 0 32px; }
+  .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 56px; }
+  .footer-about p { font-size: 15px; color: rgba(255,255,255,0.55); line-height: 1.7; margin: 16px 0 24px; max-width: 280px; }
+  .footer-social { display: flex; gap: 10px; }
+  .social-link {
+    width: 38px; height: 38px; background: rgba(255,255,255,0.07); border-radius: 10px;
+    display: flex; align-items: center; justify-content: center; transition: var(--transition);
+  }
+  .social-link:hover { background: var(--orange); }
+  .social-link svg { width: 18px; height: 18px; fill: rgba(255,255,255,0.7); }
+  .social-link:hover svg { fill: white; }
+  .footer-col h4 { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 15px; color: white; margin-bottom: 18px; }
+  .footer-links { display: flex; flex-direction: column; gap: 10px; }
+  .footer-links a { font-size: 14px; color: rgba(255,255,255,0.55); transition: var(--transition); }
+  .footer-links a:hover { color: var(--orange); }
+  .footer-contact-item { display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: rgba(255,255,255,0.6); margin-bottom: 10px; }
+  .footer-contact-item svg { width: 16px; height: 16px; fill: var(--orange); flex-shrink: 0; margin-top: 2px; }
+  .footer-bottom { border-top: 1px solid rgba(255,255,255,0.07); padding-top: 28px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+  .footer-bottom p { font-size: 13px; color: rgba(255,255,255,0.35); }
+
+  /* ─── STICKY MOBILE CTA ─── */
+  .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 900; background: white; padding: 14px 20px; box-shadow: 0 -4px 24px rgba(0,0,0,0.15); }
+  .mobile-sticky-cta-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .mobile-sticky-cta .btn-call { background: var(--navy); color: white; padding: 13px; border-radius: var(--radius-md); font-family: 'Syne', sans-serif; font-weight: 700; font-size: 14px; border: none; text-align: center; display: flex; align-items: center; justify-content: center; gap: 6px; }
+  .mobile-sticky-cta .btn-book { background: var(--orange); color: white; padding: 13px; border-radius: var(--radius-md); font-family: 'Syne', sans-serif; font-weight: 700; font-size: 14px; border: none; text-align: center; display: flex; align-items: center; justify-content: center; gap: 6px; }
+
+  /* ─── RESPONSIVE ─── */
+  @media(max-width: 1024px) {
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .booking-wrapper { grid-template-columns: 1fr; }
+    .booking-sidebar { position: static; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  }
+  @media(max-width: 768px) {
+    .nav-links, .nav-phone { display: none; }
+    .hamburger { display: flex; }
+    .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+    .hero-visual { display: none; }
+    .trust-items { gap: 16px; }
+    .trust-divider { display: none; }
+    .form-grid-2 { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+    .footer-bottom { flex-direction: column; text-align: center; }
+    .mobile-sticky-cta { display: block; }
+    body { padding-bottom: 80px; }
+    .booking-sidebar { grid-template-columns: 1fr; }
+    .booking-form-container { padding: 28px 20px; }
+    .form-progress .step-label { display: none; }
+  }
+  @media(max-width: 480px) {
+    .hero-ctas { flex-direction: column; }
+    .hero-ctas a, .hero-ctas button { width: 100%; justify-content: center; }
+    .pricing-grid { grid-template-columns: 1fr; }
+    .cta-buttons { flex-direction: column; width: 100%; }
+    .cta-buttons a, .cta-buttons button { width: 100%; justify-content: center; }
+  }
+  .mobile-nav-menu {
+    display: none; position: fixed; inset: 0; background: var(--navy); z-index: 999;
+    flex-direction: column; align-items: center; justify-content: center; gap: 28px;
+  }
+  .mobile-nav-menu.open { display: flex; }
+  .mobile-nav-menu a { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 26px; color: white; }
+  .mobile-nav-menu .close-btn { position: absolute; top: 24px; right: 24px; background: none; border: none; cursor: pointer; }
+  .mobile-nav-menu .close-btn svg { width: 28px; height: 28px; fill: white; }
+</style>
+</head>
+<body>
+
+<!-- Mobile Nav Menu -->
+<div class="mobile-nav-menu" id="mobileMenu">
+  <button class="close-btn" onclick="closeMobileMenu()">
+    <svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/></svg>
+  </button>
+  <a href="#home" onclick="closeMobileMenu()">Home</a>
+  <a href="#services" onclick="closeMobileMenu()">Services</a>
+  <a href="#pricing" onclick="closeMobileMenu()">Pricing</a>
+  <a href="#reviews" onclick="closeMobileMenu()">Reviews</a>
+  <a href="#book" onclick="closeMobileMenu()">Book Now</a>
+  <a href="#faq" onclick="closeMobileMenu()">FAQ</a>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#home" class="logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 10.182L12 3l9 7.182V21H3V10.182z"/><path d="M9 21V13h6v8" fill="rgba(255,255,255,0.3)"/><rect x="10.5" y="8" width="3" height="3" rx="0.5" fill="rgba(255,255,255,0.5)"/></svg>
+        </div>
+        <div class="logo-text">
+          <div class="name">Pristine Garage Co</div>
+          <div class="tagline">Twin Cities, MN</div>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="nav-cta">
+        <a href="tel:6122078736" class="nav-phone">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.9 12.29a19.79 19.79 0 01-3.07-8.67A2 2 0 013.81 1.5h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 9.91a16 16 0 006.29 6.29l1.77-1.77a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          612-207-8736
+        </a>
+        <a href="#book" class="btn-primary" style="font-size:14px;padding:12px 22px">Book Now</a>
+      </div>
+      <div class="hamburger" onclick="openMobileMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span></span>
+          Now Booking — Twin Cities & Surrounding Areas
+        </div>
+        <h1 class="hero-title">
+          We Transform <span class="accent">Packed, Cluttered</span> Garages Into Clean Functional Spaces
+        </h1>
+        <p class="hero-subtitle">Professional deep cleanouts, heavy hauling, and full garage restoration. No job is too overwhelming — we handle the hardest garages in the Twin Cities.</p>
+        <div class="hero-ctas">
+          <a href="#book" class="btn-primary">
+            <svg style="width:18px;height:18px;fill:white" viewBox="0 0 24 24"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            Book Your Garage Cleanout
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="num">100<span>+</span></div>
+            <div class="lab">Garages Transformed</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num">4.9<span>★</span></div>
+            <div class="lab">Average Rating</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num">48<span>hr</span></div>
+            <div class="lab">Fast Scheduling</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div style="position:relative;">
+          <div class="hero-floating-badge">✓ Available This Week</div>
+          <div class="hero-card-main">
+            <div class="hero-card-header">
+              <div class="hero-card-icon">
+                <svg viewBox="0 0 24 24"><path d="M3 10.182L12 3l9 7.182V21H3V10.182z"/><path d="M9 21V13h6v8" fill="rgba(255,255,255,0.3)"/></svg>
+              </div>
+              <div class="hero-card-info">
+                <div class="title">Recent Job — Eden Prairie</div>
+                <div class="sub">Full Cleanout · 3-Car Garage</div>
+              </div>
+            </div>
+            <div class="hero-card-body">
+              <div style="margin-bottom:20px;">
+                <div style="color:#FCD34D;font-size:18px;letter-spacing:2px;margin-bottom:10px;">★★★★★</div>
+                <p style="font-size:15px;color:rgba(255,255,255,0.85);line-height:1.7;font-style:italic;">"I booked online Monday, they were there Wednesday. Showed up with a full crew and had my completely packed 3-car garage cleared out by afternoon. Unreal how fast they worked."</p>
+              </div>
+              <div style="display:flex;align-items:center;gap:12px;border-top:1px solid rgba(255,255,255,0.08);padding-top:16px;">
+                <div style="width:40px;height:40px;border-radius:50%;background:rgba(240,90,26,0.3);display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:700;font-size:14px;color:white;flex-shrink:0;">MR</div>
+                <div>
+                  <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:14px;color:white;">Mike R.</div>
+                  <div style="font-size:12px;color:rgba(255,255,255,0.5);">Eden Prairie, MN · Verified Customer</div>
+                </div>
+                <div class="badge-pill" style="margin-left:auto;">From $950</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="container">
+    <div class="trust-items">
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        Twin Cities Local
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        48-Hour Scheduling
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24"><path d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        Satisfaction Guaranteed
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        Fast Emergency Service
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="section-label">What We Do</div>
+    <h2 class="section-title">Professional Garage Services<br>Built for Heavy-Duty Work</h2>
+    <p class="section-subtitle">We specialize in the jobs other companies won't take on — packed, overwhelming garages that need serious professional attention.</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M20 7H4a2 2 0 00-2 2v10a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M16 3H8L6 7h12l-2-4z"/></svg>
+        </div>
+        <h3>Deep Garage Cleaning</h3>
+        <p>Floor-to-ceiling professional cleaning including walls, floors, shelving, and every corner. We treat your garage like a room in your home.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>
+        </div>
+        <h3>Packed Garage Cleanouts</h3>
+        <p>No matter how packed your garage is — floor invisible, boxes stacked to the ceiling — our crews can handle it completely.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+        </div>
+        <h3>Junk Hauling &amp; Removal</h3>
+        <p>We load, haul, and dispose of everything — furniture, appliances, scrap, trash, old tools, yard equipment, and more.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>
+        </div>
+        <h3>Garage Organization</h3>
+        <p>After the cleanout, we organize what you're keeping — categorized, accessible, and set up the right way so it stays clean.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+        </div>
+        <h3>Heavy Item Removal</h3>
+        <p>Old appliances, massive furniture, safes, gym equipment — we have the crew and equipment to remove heavy items safely.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3>Estate Garage Cleanouts</h3>
+        <p>Compassionate, professional estate garage clearing services. We handle decades of accumulated items with care and efficiency.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+        </div>
+        <h3>Storage Removal</h3>
+        <p>Clearing out years of storage overload — boxes, bins, miscellaneous items, seasonal clutter — all hauled away or organized.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="container">
+    <div class="section-label">Transparent Pricing</div>
+    <h2 class="section-title">Straightforward Pricing<br>No Hidden Fees</h2>
+    <p class="section-subtitle">Every garage is different. Our pricing reflects the actual work involved. All quotes are free — we assess your specific situation before you commit to anything.</p>
+    <div class="pricing-grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));max-width:800px;margin:56px auto 0;">
+      <div class="price-card">
+        <div class="price-tier">Standard Cleanout</div>
+        <div class="price-amount"><span>$</span>950</div>
+        <div class="price-note">Starting price · 1–3 car garage</div>
+        <ul class="price-features">
+          <li>Light-to-moderate clutter</li>
+          <li>Junk removal &amp; haul-out</li>
+          <li>Full floor sweep &amp; cleanup</li>
+          <li>1–2 truckload hauls</li>
+          <li>2 crew members</li>
+          <li>Same-day completion</li>
+        </ul>
+        <a href="#book" class="btn-dark" style="display:block;text-align:center;padding:15px">Book This Service</a>
+      </div>
+      <div class="price-card featured">
+        <div class="price-badge">Most Popular</div>
+        <div class="price-tier">Full Cleanout</div>
+        <div class="price-amount" style="color:white"><span>$</span>1,500</div>
+        <div class="price-note">Starting price · Any garage size</div>
+        <ul class="price-features">
+          <li>Heavily to extremely packed</li>
+          <li>Complete junk haul &amp; removal</li>
+          <li>Deep floor &amp; wall cleaning</li>
+          <li>Multiple truck loads</li>
+          <li>2–3 crew members</li>
+          <li>Heavy item removal included</li>
+          <li>Organization services</li>
+        </ul>
+        <a href="#book" class="btn-primary" style="display:block;text-align:center;padding:15px">Book This Service</a>
+      </div>
+    </div>
+    <p class="price-disclaimer">All pricing is a starting point. Final quotes are based on garage size, amount of debris, hauling volume, labor intensity, and any special circumstances. We provide free estimates — no commitment required. Call <a href="tel:6122078736" style="color:var(--orange);font-weight:600">612-207-8736</a> or book online for your free assessment.</p>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="container">
+    <div class="section-label">Customer Reviews</div>
+    <h2 class="section-title">What Twin Cities Homeowners Say</h2>
+    <p class="section-subtitle">Real reviews from real homeowners who had their garages transformed by our team.</p>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"I was completely embarrassed by my garage. Years of stuff just piled up. The Pristine team showed up and within hours it was unrecognizable. Professional, fast, and genuinely impressive. My car is finally in the garage for the first time in 6 years."</p>
+        <div class="review-author">
+          <div class="review-avatar" style="background:#3B82F6">KM</div>
+          <div>
+            <div class="review-name">Kevin M.</div>
+            <div class="review-location">Edina, MN</div>
+            <div class="review-verified">✓ Verified Customer</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"We had an estate situation — my father's garage with 30 years of items. I didn't know where to start. Pristine Garage Co handled it with so much professionalism and care. They got it done in one day. Worth every penny."</p>
+        <div class="review-author">
+          <div class="review-avatar" style="background:#059669">SL</div>
+          <div>
+            <div class="review-name">Sandra L.</div>
+            <div class="review-location">Bloomington, MN</div>
+            <div class="review-verified">✓ Verified Customer</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"I've tried to clean my garage myself a dozen times and it never happened. These guys came in with a 3-person crew and in 4 hours the whole thing was done. The haul-out was massive. Seriously impressive operation."</p>
+        <div class="review-author">
+          <div class="review-avatar" style="background:#7C3AED">TR</div>
+          <div>
+            <div class="review-name">Tom R.</div>
+            <div class="review-location">Burnsville, MN</div>
+            <div class="review-verified">✓ Verified Customer</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Booked online, they responded within 2 hours, came out 2 days later. 3-car garage, completely packed. They hauled out an old riding mower, two refrigerators, piles of lumber, and countless boxes. Incredible team."</p>
+        <div class="review-author">
+          <div class="review-avatar" style="background:#DC2626">AW</div>
+          <div>
+            <div class="review-name">Amanda W.</div>
+            <div class="review-location">Eden Prairie, MN</div>
+            <div class="review-verified">✓ Verified Customer</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"The stress relief alone is worth the price. I had anxiety every time I opened the garage door. Now it's organized, clean, and I actually enjoy going in there. The team was respectful, efficient, and really knew what they were doing."</p>
+        <div class="review-author">
+          <div class="review-avatar" style="background:#D97706">JH</div>
+          <div>
+            <div class="review-name">Jennifer H.</div>
+            <div class="review-location">Plymouth, MN</div>
+            <div class="review-verified">✓ Verified Customer</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"I called on a Tuesday, they were there Thursday. My garage had construction debris from a remodel that sat for 8 months. They loaded a huge truck and it was done. Fast, fair price, zero complaints. Highly recommend."</p>
+        <div class="review-author">
+          <div class="review-avatar" style="background:#0891B2">DC</div>
+          <div>
+            <div class="review-name">David C.</div>
+            <div class="review-location">Minnetonka, MN</div>
+            <div class="review-verified">✓ Verified Customer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING FORM -->
+<section id="book">
+  <div class="container">
+    <div class="section-label" style="color:var(--orange)">Book Online</div>
+    <h2 class="section-title">Schedule Your Garage Cleanout</h2>
+    <p class="section-subtitle">Fill out the form below and we'll confirm your appointment within 2–4 hours. Fast, easy, professional.</p>
+    <div class="booking-wrapper">
+      <div class="booking-sidebar">
+        <div class="booking-info-card">
+          <h3>What To Expect</h3>
+          <div class="booking-info-list">
+            <div class="booking-info-item">
+              <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              We confirm your booking within 2–4 hours
+            </div>
+            <div class="booking-info-item">
+              <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              We review your garage details &amp; photos
+            </div>
+            <div class="booking-info-item">
+              <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              We provide a firm quote before arrival
+            </div>
+            <div class="booking-info-item">
+              <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              Our crew arrives on time, fully equipped
+            </div>
+            <div class="booking-info-item">
+              <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              We complete the job — you love the result
+            </div>
+          </div>
+        </div>
+        <div class="booking-contact">
+          <h4>Prefer to Talk First?</h4>
+          <a href="tel:6122078736" class="contact-link">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.9 12.29a19.79 19.79 0 01-3.07-8.67A2 2 0 013.81 1.5h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 9.91a16 16 0 006.29 6.29l1.77-1.77a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            612-207-8736
+          </a>
+          <a href="mailto:pristinegarageco@gmail.com" class="contact-link" style="font-size:13px;opacity:0.9">
+            <svg viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            pristinegarageco@gmail.com
+          </a>
+        </div>
+      </div>
+
+      <div class="booking-form-container">
+        <!-- Progress -->
+        <div class="form-progress">
+          <div class="progress-step active" data-step="1" onclick="goToStep(1)">
+            <div class="step-num">1</div>
+            <div class="step-label">Your Info</div>
+          </div>
+          <div class="progress-step" data-step="2" onclick="goToStep(2)">
+            <div class="step-num">2</div>
+            <div class="step-label">Garage Details</div>
+          </div>
+          <div class="progress-step" data-step="3" onclick="goToStep(3)">
+            <div class="step-num">3</div>
+            <div class="step-label">Services</div>
+          </div>
+          <div class="progress-step" data-step="4" onclick="goToStep(4)">
+            <div class="step-num">4</div>
+            <div class="step-label">Schedule</div>
+          </div>
+        </div>
+
+        <!-- Success State -->
+        <div class="success-state" id="successState">
+          <div class="success-icon"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+          <h3>Booking Request Sent!</h3>
+          <p>We'll review your garage details and confirm your appointment within 2–4 hours. Check your email for confirmation.</p>
+          <div style="margin-top:24px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+            <a href="tel:6122078736" class="btn-primary">Call Us Now</a>
+          </div>
+        </div>
+
+        <form id="bookingForm" action="https://formspree.io/f/mgoqvebv" method="POST" novalidate>
+          <input type="hidden" name="_next" value="https://your-vercel-url.vercel.app/#book">
+          <input type="hidden" name="_subject" value="New Garage Cleanout Booking — Pristine Garage Co">
+
+          <!-- Step 1: Contact Info -->
+          <div class="form-step active" id="step1">
+            <div class="form-step-title">Your Contact Information</div>
+            <div class="form-step-sub">Let's start with the basics so we can reach you quickly.</div>
+            <div class="form-grid" style="margin-bottom:24px;">
+              <div class="form-group full">
+                <label class="form-label">Which Package Are You Booking? <span class="req">*</span></label>
+                <div class="radio-group" style="flex-direction:row;flex-wrap:wrap;gap:12px;">
+                  <div class="radio-item" style="flex:1;min-width:200px;">
+                    <input type="radio" name="package" id="pkg1" value="Standard Cleanout — Starting at $950">
+                    <label class="radio-label" for="pkg1" style="flex-direction:column;align-items:flex-start;gap:4px;">
+                      <span style="font-weight:700;font-size:16px;">Standard Cleanout</span>
+                      <span style="font-size:13px;color:var(--text-muted);">Starting at $950 · 1–3 car garage</span>
+                    </label>
+                  </div>
+                  <div class="radio-item" style="flex:1;min-width:200px;">
+                    <input type="radio" name="package" id="pkg2" value="Full Cleanout — Starting at $1,500">
+                    <label class="radio-label" for="pkg2" style="flex-direction:column;align-items:flex-start;gap:4px;">
+                      <span style="font-weight:700;font-size:16px;">Full Cleanout <span style="font-size:11px;background:var(--orange);color:white;padding:2px 8px;border-radius:50px;vertical-align:middle;">Popular</span></span>
+                      <span style="font-size:13px;color:var(--text-muted);">Starting at $1,500 · Any garage size</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-grid form-grid-2">
+              <div class="form-group">
+                <label class="form-label">Full Name <span class="req">*</span></label>
+                <input type="text" name="full_name" class="form-input" placeholder="John Smith">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Phone Number <span class="req">*</span></label>
+                <input type="tel" name="phone" class="form-input" placeholder="(612) 555-0000">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email Address <span class="req">*</span></label>
+                <input type="email" name="email" class="form-input" placeholder="you@email.com">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Home Address <span class="req">*</span></label>
+                <input type="text" name="address" class="form-input" placeholder="123 Main St, Minneapolis MN">
+              </div>
+            </div>
+            <div class="form-nav">
+              <div></div>
+              <button type="button" class="btn-step-next" onclick="nextStep(1)">
+                Next: Garage Details
+                <svg style="width:18px;height:18px;fill:white" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 2: Garage Details -->
+          <div class="form-step" id="step2">
+            <div class="form-step-title">Tell Us About Your Garage</div>
+            <div class="form-step-sub">The more detail, the more accurate your quote will be.</div>
+            <div class="form-grid">
+              <div class="form-group">
+                <label class="form-label">Garage Size <span class="req">*</span></label>
+                <div class="radio-group">
+                  <div class="radio-item">
+                    <input type="radio" name="garage_size" id="gs1" value="1-car">
+                    <label class="radio-label" for="gs1">1-Car Garage</label>
+                  </div>
+                  <div class="radio-item">
+                    <input type="radio" name="garage_size" id="gs2" value="2-car">
+                    <label class="radio-label" for="gs2">2-Car Garage</label>
+                  </div>
+                  <div class="radio-item">
+                    <input type="radio" name="garage_size" id="gs3" value="3-car">
+                    <label class="radio-label" for="gs3">3-Car Garage</label>
+                  </div>
+                  <div class="radio-item">
+                    <input type="radio" name="garage_size" id="gs4" value="oversized">
+                    <label class="radio-label" for="gs4">Oversized / Workshop Garage</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">How Packed Is Your Garage? <span class="req">*</span></label>
+                <div class="radio-group">
+                  <div class="radio-item">
+                    <input type="radio" name="garage_condition" id="gc1" value="light">
+                    <label class="radio-label" for="gc1">Light Clutter — Mostly organized but some junk</label>
+                  </div>
+                  <div class="radio-item">
+                    <input type="radio" name="garage_condition" id="gc2" value="moderate">
+                    <label class="radio-label" for="gc2">Moderately Packed — You can still walk through</label>
+                  </div>
+                  <div class="radio-item">
+                    <input type="radio" name="garage_condition" id="gc3" value="extremely">
+                    <label class="radio-label" for="gc3">Extremely Packed — Hard to navigate inside</label>
+                  </div>
+                  <div class="radio-item">
+                    <input type="radio" name="garage_condition" id="gc4" value="floor-not-visible">
+                    <label class="radio-label" for="gc4">Floor Not Visible — Maximum capacity situation</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-nav">
+              <button type="button" class="btn-step-back" onclick="prevStep(2)">← Back</button>
+              <button type="button" class="btn-step-next" onclick="nextStep(2)">
+                Next: Services
+                <svg style="width:18px;height:18px;fill:white" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 3: Services -->
+          <div class="form-step" id="step3">
+            <div class="form-step-title">Services &amp; Items</div>
+            <div class="form-step-sub">Tell us exactly what needs to go and what services you need.</div>
+            <div class="form-grid">
+              <div class="form-group">
+                <label class="form-label">Do You Need Hauling / Removal Services?</label>
+                <div class="radio-group" style="flex-direction:row;flex-wrap:wrap;gap:10px;">
+                  <div class="radio-item" style="flex:1;min-width:140px;">
+                    <input type="radio" name="needs_hauling" id="nh1" value="yes">
+                    <label class="radio-label" for="nh1">Yes, definitely</label>
+                  </div>
+                  <div class="radio-item" style="flex:1;min-width:140px;">
+                    <input type="radio" name="needs_hauling" id="nh2" value="maybe">
+                    <label class="radio-label" for="nh2">Maybe / Not sure</label>
+                  </div>
+                  <div class="radio-item" style="flex:1;min-width:140px;">
+                    <input type="radio" name="needs_hauling" id="nh3" value="no">
+                    <label class="radio-label" for="nh3">No, just cleaning</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">What Items Need Removal? (Select all that apply)</label>
+                <div class="checkbox-group">
+                  <div class="checkbox-item"><input type="checkbox" name="items[]" id="i1" value="Furniture"><label class="checkbox-label" for="i1">Furniture</label></div>
+                  <div class="checkbox-item"><input type="checkbox" name="items[]" id="i2" value="Trash/Junk"><label class="checkbox-label" for="i2">Trash / Junk</label></div>
+                  <div class="checkbox-item"><input type="checkbox" name="items[]" id="i3" value="Construction debris"><label class="checkbox-label" for="i3">Construction Debris</label></div>
+                  <div class="checkbox-item"><input type="checkbox" name="items[]" id="i4" value="Boxes"><label class="checkbox-label" for="i4">Boxes</label></div>
+                  <div class="checkbox-item"><input type="checkbox" name="items[]" id="i5" value="Appliances"><label class="checkbox-label" for="i5">Appliances</label></div>
+                  <div class="checkbox-item"><input type="checkbox" name="items[]" id="i6" value="Tools"><label class="checkbox-label" for="i6">Tools</label></div>
+                  <div class="checkbox-item"><input type="checkbox" name="items[]" id="i7" value="Yard equipment"><label class="checkbox-label" for="i7">Yard Equipment</label></div>
+                  <div class="checkbox-item"><input type="checkbox" name="items[]" id="i8" value="Miscellaneous junk"><label class="checkbox-label" for="i8">Misc. Junk</label></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Approximate Amount of Junk</label>
+                <div class="form-select-wrap">
+                  <select name="junk_amount" class="form-select">
+                    <option value="">Select estimated volume</option>
+                    <option>Small load (fits in one pickup truck)</option>
+                    <option>Medium load (1–2 trailer loads)</option>
+                    <option>Large load (2–3 trailer loads)</option>
+                    <option>Massive load (4+ trailer loads / full truck)</option>
+                    <option>Not sure — hard to estimate</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Are There Any Heavy Items? (500+ lbs)</label>
+                <div class="radio-group" style="flex-direction:row;flex-wrap:wrap;gap:10px;">
+                  <div class="radio-item" style="flex:1;min-width:140px;">
+                    <input type="radio" name="heavy_items" id="hi1" value="yes">
+                    <label class="radio-label" for="hi1">Yes</label>
+                  </div>
+                  <div class="radio-item" style="flex:1;min-width:140px;">
+                    <input type="radio" name="heavy_items" id="hi2" value="no">
+                    <label class="radio-label" for="hi2">No</label>
+                  </div>
+                  <div class="radio-item" style="flex:1;min-width:140px;">
+                    <input type="radio" name="heavy_items" id="hi3" value="not-sure">
+                    <label class="radio-label" for="hi3">Not Sure</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Do You Need Organization After Cleanout?</label>
+                <div class="radio-group" style="flex-direction:row;flex-wrap:wrap;gap:10px;">
+                  <div class="radio-item" style="flex:1;min-width:140px;">
+                    <input type="radio" name="needs_organization" id="o1" value="yes">
+                    <label class="radio-label" for="o1">Yes</label>
+                  </div>
+                  <div class="radio-item" style="flex:1;min-width:140px;">
+                    <input type="radio" name="needs_organization" id="o2" value="no">
+                    <label class="radio-label" for="o2">No</label>
+                  </div>
+                  <div class="radio-item" style="flex:1;min-width:140px;">
+                    <input type="radio" name="needs_organization" id="o3" value="discuss">
+                    <label class="radio-label" for="o3">Let's Discuss</label>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="form-nav">
+              <button type="button" class="btn-step-back" onclick="prevStep(3)">← Back</button>
+              <button type="button" class="btn-step-next" onclick="nextStep(3)">
+                Next: Schedule
+                <svg style="width:18px;height:18px;fill:white" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 4: Schedule -->
+          <div class="form-step" id="step4">
+            <div class="form-step-title">Choose Your Appointment</div>
+            <div class="form-step-sub">Select a preferred date and time — we'll confirm availability within 2–4 hours.</div>
+            <div class="form-grid form-grid-2">
+              <div class="form-group full">
+                <label class="form-label">Preferred Appointment Date <span class="req">*</span></label>
+                <input type="date" name="preferred_date" id="dateInput" class="form-input">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Preferred Start Time <span class="req">*</span></label>
+                <div class="form-select-wrap">
+                  <select name="preferred_time" class="form-select">
+                    <option value="">Select a time</option>
+                    <option>7:00 AM (Early Morning)</option>
+                    <option>8:00 AM</option>
+                    <option>9:00 AM</option>
+                    <option>10:00 AM</option>
+                    <option>11:00 AM</option>
+                    <option>12:00 PM (Noon)</option>
+                    <option>1:00 PM</option>
+                    <option>2:00 PM</option>
+                    <option>3:00 PM</option>
+                    <option>4:00 PM</option>
+                    <option>Flexible — Anytime works</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Alternate Date (if applicable)</label>
+                <input type="date" name="alternate_date" class="form-input">
+              </div>
+              <div class="form-group full">
+                <label class="form-label">Additional Notes or Details</label>
+                <textarea name="additional_notes" class="form-textarea" placeholder="Tell us anything else about your garage situation — special access, gate codes, concerns, specific items, etc."></textarea>
+              </div>
+              <div class="form-group full" style="background:rgba(240,90,26,0.06);border:1.5px solid rgba(240,90,26,0.2);border-radius:14px;padding:20px;">
+                <p style="font-size:14px;color:var(--text-body);line-height:1.7;margin:0;">
+                  <strong style="color:var(--navy);">What happens next:</strong> After submitting, our team will review your details and photos, then reach out within 2–4 hours to confirm your appointment and provide a quote. No commitment required until you approve the quote.
+                </p>
+              </div>
+            </div>
+            <div class="form-nav">
+              <button type="button" class="btn-step-back" onclick="prevStep(4)">← Back</button>
+              <button type="submit" class="btn-submit" id="submitBtn">
+                <svg style="width:20px;height:20px;fill:white" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                Submit Booking Request
+              </button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="section-label">Common Questions</div>
+    <h2 class="section-title" style="text-align:center">Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h4>How much does a garage cleanout cost?</h4>
+          <div class="faq-toggle"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></div>
+        </div>
+        <div class="faq-answer"><div class="faq-answer-inner">Our cleanouts start at $950 for standard jobs. Pricing depends on garage size, how packed it is, amount of hauling, type of debris, and labor intensity. Most full cleanout jobs start at $1,500. We provide a free, no-obligation quote before you commit to anything.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h4>How fast can you schedule a cleanout?</h4>
+          <div class="faq-toggle"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></div>
+        </div>
+        <div class="faq-answer"><div class="faq-answer-inner">Most jobs are scheduled within 24–72 hours. We also offer emergency/rush scheduling for situations that need immediate attention. Call us directly at 612-207-8736 if you need something fast.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h4>Do you haul everything away or just clean?</h4>
+          <div class="faq-toggle"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></div>
+        </div>
+        <div class="faq-answer"><div class="faq-answer-inner">Both! We offer full-service haul-out where we remove and dispose of everything, or we can do cleaning and organization if you've already dealt with the junk. Most of our clients want everything removed — furniture, appliances, junk, trash, debris. We handle it all.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h4>What if my garage is extremely packed or overwhelming?</h4>
+          <div class="faq-toggle"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></div>
+        </div>
+        <div class="faq-answer"><div class="faq-answer-inner">That's exactly who we work for. We specialize in packed, overwhelming garages — the jobs most people don't know where to start with. We've seen it all and handled it all. Don't be embarrassed — just reach out and we'll take it from there.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h4>Are you licensed and insured?</h4>
+          <div class="faq-toggle"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></div>
+        </div>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes. Pristine Garage Co is fully licensed and insured in Minnesota. You can have complete peace of mind that your property and belongings are protected throughout the entire process.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h4>Do I need to be home during the cleanout?</h4>
+          <div class="faq-toggle"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></div>
+        </div>
+        <div class="faq-answer"><div class="faq-answer-inner">You should be home at the start to walk us through what stays and what goes. After that initial walkthrough, many clients leave us to work. We'll check in if we have any questions and update you when the job is complete.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h4>What cities do you serve in the Twin Cities area?</h4>
+          <div class="faq-toggle"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></div>
+        </div>
+        <div class="faq-answer"><div class="faq-answer-inner">We serve the entire Twin Cities metro including Minneapolis, St. Paul, Edina, Eden Prairie, Bloomington, Burnsville, Plymouth, Minnetonka, Eagan, Lakeville, Apple Valley, Rosemount, Woodbury, Maple Grove, and surrounding communities. Not sure if you're in our area? Call us — chances are we can help.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section id="service-area">
+  <div class="container">
+    <div class="section-label">Where We Work</div>
+    <h2 class="section-title">Serving the Twin Cities Metro</h2>
+    <p class="section-subtitle">Professional garage cleanout services throughout the greater Minneapolis-St. Paul area and surrounding suburbs.</p>
+    <div class="area-grid">
+      <div class="area-pill">Minneapolis</div>
+      <div class="area-pill">St. Paul</div>
+      <div class="area-pill">Edina</div>
+      <div class="area-pill">Eden Prairie</div>
+      <div class="area-pill">Bloomington</div>
+      <div class="area-pill">Burnsville</div>
+      <div class="area-pill">Plymouth</div>
+      <div class="area-pill">Minnetonka</div>
+      <div class="area-pill">Eagan</div>
+      <div class="area-pill">Lakeville</div>
+      <div class="area-pill">Apple Valley</div>
+      <div class="area-pill">Rosemount</div>
+      <div class="area-pill">Woodbury</div>
+      <div class="area-pill">Maple Grove</div>
+      <div class="area-pill">Brooklyn Park</div>
+      <div class="area-pill">Richfield</div>
+      <div class="area-pill">Hopkins</div>
+      <div class="area-pill">St. Louis Park</div>
+      <div class="area-pill">Fridley</div>
+      <div class="area-pill">Coon Rapids</div>
+      <div class="area-pill">Blaine</div>
+      <div class="area-pill">Maplewood</div>
+      <div class="area-pill">Inver Grove Heights</div>
+      <div class="area-pill">Savage</div>
+      <div class="area-pill">Prior Lake</div>
+      <div class="area-pill">& Surrounding Areas</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta">
+  <div class="container">
+    <div class="cta-inner">
+      <h2>Ready to Finally Fix Your Garage?</h2>
+      <p>Stop putting it off. Our team handles the overwhelming, the packed, and the impossible. Book online in minutes or call us now for a free estimate.</p>
+      <div class="cta-buttons">
+        <a href="#book" class="btn-white">
+          <svg style="width:20px;height:20px;fill:var(--orange)" viewBox="0 0 24 24"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          Book Your Cleanout Online
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <div class="logo">
+          <div class="logo-icon">
+            <svg viewBox="0 0 24 24"><path d="M3 10.182L12 3l9 7.182V21H3V10.182z"/><path d="M9 21V13h6v8" fill="rgba(255,255,255,0.3)"/></svg>
+          </div>
+          <div class="logo-text">
+            <div class="name">Pristine Garage Co</div>
+            <div class="tagline">Twin Cities, MN</div>
+          </div>
+        </div>
+        <p>Professional garage cleanouts, heavy hauling, and full garage restoration services serving the Twin Cities metro area. No garage is too packed, too messy, or too overwhelming for our team.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Google">
+            <svg viewBox="0 0 24 24"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm.003-5.5c2.484 0 4.497-2.015 4.497-4.5S14.487 7.5 12.003 7.5C9.52 7.5 7.5 9.515 7.5 12s2.02 4.5 4.503 4.5z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <div class="footer-links">
+          <a href="#services">Deep Garage Cleaning</a>
+          <a href="#services">Packed Garage Cleanouts</a>
+          <a href="#services">Junk Hauling</a>
+          <a href="#services">Garage Organization</a>
+          <a href="#services">Heavy Item Removal</a>
+          <a href="#services">Estate Cleanouts</a>
+          <a href="#services">Storage Removal</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#faq">FAQ</a>
+          <a href="#service-area">Service Area</a>
+          <a href="#book">Book Now</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.9 12.29a19.79 19.79 0 01-3.07-8.67A2 2 0 013.81 1.5h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 9.91a16 16 0 006.29 6.29l1.77-1.77a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          <a href="tel:6122078736" style="color:rgba(255,255,255,0.6)">612-207-8736</a>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          <a href="mailto:pristinegarageco@gmail.com" style="color:rgba(255,255,255,0.6);word-break:break-all">pristinegarageco@gmail.com</a>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          Twin Cities Metro, Minnesota
+        </div>
+        <div style="margin-top:16px;">
+          <a href="#book" class="btn-primary" style="font-size:14px;padding:12px 22px">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Pristine Garage Co. All rights reserved. Serving the Twin Cities, Minnesota.</p>
+      <p>Twin Cities Local Business · Fast &amp; Reliable</p>
+    </div>
+  </div>
+</footer>
+
+<!-- MOBILE STICKY CTA -->
+<div class="mobile-sticky-cta">
+  <div class="mobile-sticky-cta-inner" style="grid-template-columns:1fr;">
+    <a href="#book" class="btn-book" style="border-radius:var(--radius-md);">📅 Book Now</a>
+  </div>
+</div>
+
+<script>
+  // Navbar scroll effect
+  window.addEventListener('scroll', () => {
+    const nav = document.getElementById('mainNav');
+    if (window.scrollY > 60) nav.classList.add('scrolled');
+    else nav.classList.remove('scrolled');
+  });
+
+  // Mobile menu
+  function openMobileMenu() { document.getElementById('mobileMenu').classList.add('open'); document.body.style.overflow='hidden'; }
+  function closeMobileMenu() { document.getElementById('mobileMenu').classList.remove('open'); document.body.style.overflow=''; }
+
+  // Multi-step form
+  let currentStep = 1;
+  const totalSteps = 4;
+
+  function goToStep(step) {
+    if (step > currentStep) return;
+    setStep(step);
+  }
+
+  function nextStep(current) {
+    if (current < totalSteps) setStep(current + 1);
+  }
+
+  function prevStep(current) {
+    if (current > 1) setStep(current - 1);
+  }
+
+  function setStep(step) {
+    document.querySelectorAll('.form-step').forEach(s => s.classList.remove('active'));
+    document.getElementById('step' + step).classList.add('active');
+    document.querySelectorAll('.progress-step').forEach((s, i) => {
+      s.classList.remove('active', 'done');
+      if (i + 1 < step) s.classList.add('done');
+      else if (i + 1 === step) s.classList.add('active');
+    });
+    currentStep = step;
+    document.querySelector('#book .booking-form-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  // Set min date for date inputs
+  const today = new Date().toISOString().split('T')[0];
+  document.getElementById('dateInput').min = today;
+  const altDate = document.querySelector('input[name="alternate_date"]');
+  if (altDate) altDate.min = today;
+
+  // Form submit — plain HTML POST to Formspree (no fetch needed)
+  document.getElementById('bookingForm').addEventListener('submit', function(e) {
+    const btn = document.getElementById('submitBtn');
+    btn.disabled = true;
+    btn.innerHTML = '<svg style="width:20px;height:20px;fill:white;animation:spin 1s linear infinite" viewBox="0 0 24 24"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg> Submitting...';
+    const style = document.createElement('style');
+    style.textContent = '@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}';
+    document.head.appendChild(style);
+    // Let the form submit naturally to Formspree
+  });
+
+  // FAQ
+  function toggleFaq(el) {
+    const item = el.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+
+  // Smooth scroll for nav links
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  // Intersection Observer for animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.service-card, .review-card, .price-card').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(30px)';
+    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease, box-shadow 0.28s ease, border-color 0.28s ease';
+    observer.observe(el);
+  });
+</script>
+</body>
+</html>
